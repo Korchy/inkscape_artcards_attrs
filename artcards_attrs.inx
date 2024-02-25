@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+<name>ArtCards Attrs</name>
+    <id>nikita_akimov.interplanety.artcards_attrs</id>
+    <dependency type="executable" location="extensions">artcards_attrs.py</dependency>
+    <param name="ca_type" type="optiongroup" appearance="radio" gui-text="Type:">
+        <option value="image">Image</option>
+        <option value="text">Text</option>
+    </param>
+    <param name="ca_lib" type="string" gui-text="Lib: "></param>
+    <param name="ca_id" type="string" gui-text="Id:  "></param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Attributes"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">artcards_attrs.py</command>
+    </script>
+</inkscape-extension>
